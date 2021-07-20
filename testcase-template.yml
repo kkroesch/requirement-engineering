@@ -1,0 +1,12 @@
+# Test Case Template
+id: tc-1001
+scenario: Check constant speed
+steps:
+  - Lock speed
+  - Drive for 30 minutes
+  - Measure speed every minute
+  - Calculate average speed
+data: Speed = 100 km/h
+expected: Average Speed = 100 km/h +/- 2 km/h
+result: 99.8 km/h
+outcome: pass

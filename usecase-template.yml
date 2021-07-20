@@ -1,0 +1,26 @@
+---
+# Use Case Template
+id: uc-10
+title: Tempomat -- Regulate Car Speed 
+actor: Driver
+trigger: Lock current speed
+description: |
+    As the car driver, 
+	I want to lock current speed
+	so that I do not need to hold it constant manually.
+precondition: Car driving, traffic low to medium
+steps:
+  - Adjust speed according to legal and traffic
+  - Lock speed to current speed
+exceptions:
+  - Emergency brake, reacting on dangerous situations
+postcondition: Speed stays constant and will be regulated after braking or temporary acceleration
+performance: Visible reaction < 250ms 
+availability: (not critical)
+comments:
+  - Q: How long does it take to accelerate back to stored speed?
+  - A: Depends on motor power and street slope
+testcases:
+  - tc-1001
+  - tc-1002
+  
