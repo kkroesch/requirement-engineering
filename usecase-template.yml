@@ -1,13 +1,12 @@
 ---
-# Use Case Template
 id: uc-10
-title: Tempomat -- Regulate Car Speed 
+title: Tempomat - Regulate Car Speed 
 actor: Driver
 trigger: Lock current speed
 description: |
-    As the car driver, 
-	I want to lock current speed
-	so that I do not need to hold it constant manually.
+  As the car driver, 
+  I want to lock current speed
+  so that I do not need to hold it constant manually.
 precondition: Car driving, traffic low to medium
 steps:
   - Adjust speed according to legal and traffic
@@ -23,4 +22,3 @@ comments:
 testcases:
   - tc-1001
   - tc-1002
-  
